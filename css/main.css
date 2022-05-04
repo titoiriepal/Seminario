@@ -194,6 +194,15 @@ textarea {
      color:#fe4918;
      
    }
+
+   .button.transparente{
+     background-color: transparent;
+     border: 3px solid ghostwhite;
+   }
+
+   .button.transparente:hover{
+    border: 3px solid #fe4918;
+   }
    .button:hover{
       background-color: #c23710;
    }
@@ -719,6 +728,7 @@ blockquote p::before{
 
 footer.info-testimonial{
   padding: 0;
+  background-color: transparent;
 
 }
 
@@ -748,6 +758,220 @@ footer.info-testimonial cite span{
   margin-top: 5px;
 }
 
+/** Newsletter **/
+
+div.newsletter{
+  position:relative;
+  height: auto;
+
+}
+
+div.newsletter::before{
+  background-image: url(../img/bg-newsletter.jpg);
+  content: '';
+}
+
+div.newsletter .contenido{
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+  position:relative;
+}
+
+div.newsletter .contenido p{
+  font-size: 1.2em;
+  text-transform: lowercase;
+}
+
+div.newsletter .contenido h3{
+  color: white;
+  text-transform: uppercase;
+  font-size: 7vw;
+  font-family: 'PT Sans', sans-serif;
+}
+
+/** Cuenta regresiva **/
+
+div.cuenta-regresiva ul li{
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+
+}
+
+@media only screen and (min-width:768px) {
+  div.cuenta-regresiva ul li{
+    width: 25%;
+    float:left;
+  }
+}
+
+/** Footer **/
+
+footer {
+  background-color: #353535;
+  padding-top: 40px;
+  margin-top: 20px;
+}
+footer .contenedor > div {
+  color: #ffffff;
+  padding: 0px 20px;
+  font-size: 12px;
+}
+@media only screen and (min-width:768px){
+  footer .contenedor > div {
+      width: 33.3%;
+      float: left;
+  }
+}
+
+footer h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 20px;
+}
+footer h3 span {
+  color: #fe4918;
+}
+footer .ultimos-tweets li {
+  margin-bottom: 10px;
+}
+footer nav.redes-sociales {
+  text-align: left;
+}
+p.copyright {
+  background-color: #2e2e2e;
+  color: #ffffff;
+  padding: 10px 0;
+  margin:20px 0 0 0;
+  text-align: center;
+}
+
+/*** Internas ***/
+
+
+/* Registro */
+
+form.registro h3{
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+}
+
+form.registro label{
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form.registro h4{
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fe4918;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+div.caja {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+div.campo{
+  padding: 20px;
+}
+
+@media only screen and (min-width:768px) {
+  div.campo{
+    float: left;
+    width: 33.3%;
+  }
+}
+
+div.paquetes .tabla-precio:hover{
+  transform: none;
+  box-shadow: none;
+}
+
+div.paquetes .tabla-precio input{
+  clear: both;
+  width: 100px;
+  margin: 10px auto 0 auto;
+  display:block;
+
+}
+
+.contenido-dia{
+  padding: 20px;
+  /* display: none; */
+
+}
+
+@media only screen and (min-width:768px) {
+  .contenido-dia > div{
+    float:left;
+    width: 33.3%;
+
+  }
+}
+
+.contenido-dia > div p{
+  text-align: left;
+
+}
+
+.contenido-dia > div label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contenido-dia > div input{
+  margin-right: 10px;
+  
+}
+
+.contenido-dia > div label time{
+  color:#fe4918;
+  font-weight: bold;
+}
+
+/* Resumen de registro */
+
+.resumen p{
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+div.resumen div.extras{
+  float: left;
+  width: 50%;
+  padding: 30px;
+
+}
+
+.extras .orden{
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.extras .orden input{
+  margin: 10px 0 0 0;
+}
+
+div.resumen div.total{
+  float:right;
+  width:50%;
+  padding: 30px;
+}
+
+div.resumen input{
+  display: block;
+  margin: 10px auto;
+}
 
 /* ==========================================================================
    Helper classes
