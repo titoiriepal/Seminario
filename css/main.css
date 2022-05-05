@@ -873,9 +873,13 @@ form.registro h4{
   font-size: 1.2em;
 }
 
+.error_campo{
+  border: 3px solid red;
+}
+
 div.caja {
   background-color: white;
-  border: 1px solid #e1e1e1;
+  border: 3px solid #e1e1e1;
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
@@ -907,7 +911,7 @@ div.paquetes .tabla-precio input{
 
 .contenido-dia{
   padding: 20px;
-  /* display: none; */
+  display: none; 
 
 }
 
@@ -971,6 +975,30 @@ div.resumen div.total{
 div.resumen input{
   display: block;
   margin: 10px auto;
+}
+
+#lista-productos{
+  background-color: #e1e1e1;
+  padding: 20px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#suma-total{
+  text-align: center;
+  font-size: 2em;
+  color:#fe4918;
+  font-weight: bold;
+}
+
+#error{
+  display: none;
+  border: 3px solid red;
+  padding-left: 25px;
+  font-family: 'Oswald',sans-serif;
+  font-weight: bold;
+  font-size: 1.4em;
 }
 
 /* ==========================================================================
