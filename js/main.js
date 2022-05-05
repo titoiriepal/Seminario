@@ -4,6 +4,20 @@
     var regalo = document.getElementById('regalo');
 
     document.addEventListener('DOMContentLoaded', function(){
+
+        //Cargamos el mapa
+
+        var map = L.map('mapa').setView([40.620753, -3.163644], 16);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        L.marker([40.620753, -3.163644]).addTo(map)
+            .bindPopup('GdlWebCamp 2022. Tickets ya a la venta')
+            .openPopup()
+            .bindTooltip('Sede principal del GdlWebCamp')
+            .openTooltip();
         
         // Campos datos de usuario
         var nombre = document.getElementById('nombre');
